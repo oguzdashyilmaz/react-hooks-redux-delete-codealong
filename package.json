@@ -11,7 +11,8 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build"
   },
   "eslintConfig": {
     "extends": [

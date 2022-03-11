@@ -5,7 +5,7 @@ import Todo from "./Todo";
 function TodoContainer() {
   const todos = useSelector((state) => state.todos.entities);
 
-  const todoList = todos.map((todo, index) => <Todo key={index} text={todo} />);
+  const todoList = todos.map((todo) => <Todo key={todo.id} todo={todo} />);
   return <ul>{todoList}</ul>;
 }
 
